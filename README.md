@@ -22,7 +22,7 @@ Para rodar este projeto localmente, siga os passos abaixo:
 	cd rosests
 3. Insale as dependências
    ```bash
-	 npm run dev
+	 npm install
 4. Inicie o servidor de desenvolvimento
 	```bash
 	npm run dev
