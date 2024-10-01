@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
+## Roses
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Roses é um aplicativo desenvolvido com React.js, TypeScript, Styled Components e SASS, utilizando Vite como ferramenta de build. O objetivo do aplicativo é fornecer uma interface amigável para usuários gerenciarem seu perfil, incluindo o upload de fotos e configurações de preferências.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React.js**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Um superconjunto tipado do JavaScript que ajuda a detectar erros durante o desenvolvimento.
+- **Styled Components**: Uma biblioteca que permite estilizar componentes de forma dinâmica utilizando CSS dentro de arquivos JavaScript.
+- **SASS**: Uma extensão do CSS que permite o uso de variáveis, aninhamento e outras funcionalidades para um CSS mais organizado e manutenível.
+- **Vite**: Uma ferramenta de construção que fornece um ambiente de desenvolvimento rápido e otimizado.
 
-## Expanding the ESLint configuration
+## Instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Para rodar este projeto localmente, siga os passos abaixo:
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/dantebaldez/rosests.git
+2. Navegue até o diretório do repositório
+	```bash
+	cd rosests
+3. Insale as dependências
+   ```bash
+	 npm run dev
+4. Inicie o servidor de desenvolvimento
+	```bash
+	npm run dev
+## Commits Semânticos
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Este projeto segue a convenção de **Commits Semânticos**, que ajuda a criar um histórico de commits mais claro e compreensível. Abaixo estão as principais regras e tipos de commits usados:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **feat**: Uma nova funcionalidade ou feature.
+- **fix**: Correções de bugs.
+- **docs**: Alterações na documentação.
+- **style**: Mudanças que não afetam a lógica do código, como formatação, espaços em branco, etc.
+- **refactor**: Mudanças no código que não adicionam funcionalidades nem corrigem bugs.
+- **test**: Adição de testes ou correções de testes existentes.
+- **chore**: Atualizações de tarefas de manutenção, como mudanças em configurações de build ou dependências.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Exemplos de Commits
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- `FEAT: add user profile upload feature`
+- `FIX: resolve issue with navbar rendering`
+- `DOCS: update README with installation instructions`
+- `STYLE: format code according to ESLint rules`
+- `REFACTOR: simplify profile component logic`
+
+Seguir essa convenção torna mais fácil para todos os colaboradores entenderem a natureza das alterações feitas no projeto ao longo do tempo.
