@@ -1,12 +1,10 @@
-// src/App.tsx
 import React from 'react';
-import './styles/global.sass';
+import Profile from './perfil/components/Profile/Profile.tsx'
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <h1>Bem-vindo ao Roses™</h1>
-      {/* componentes aqui */}
+      <Profile />
     </div>
   );
 };
